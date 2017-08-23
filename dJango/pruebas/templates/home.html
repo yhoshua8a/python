@@ -1,0 +1,22 @@
+{% extends "base_layout.html" %}
+
+{% block title %}HOME PAGE{% endblock %}
+
+{% block body %}
+
+<hr>
+<h2>BIENVENIDO A LA APP DE CURSOS CON DJANGO</h2>
+<button onclick="route()">Ver mis cursos</button>
+
+<script>
+
+function route(){
+
+   console.log("dsite click");
+
+
+location.href = "courses";
+}
+</script>
+
+{% endblock %}
